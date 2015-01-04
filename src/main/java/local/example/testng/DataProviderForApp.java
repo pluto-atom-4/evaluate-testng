@@ -1,4 +1,4 @@
-package sdet.example.testng;
+package local.example.testng;
 
 import java.util.ArrayList;
 import java.util.Arrays;

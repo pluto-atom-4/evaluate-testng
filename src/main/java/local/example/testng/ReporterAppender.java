@@ -1,4 +1,4 @@
-package sdet.example.testng;
+package local.example.testng;
 
 import org.apache.log4j.AppenderSkeleton;
 import org.apache.log4j.spi.LoggingEvent;
