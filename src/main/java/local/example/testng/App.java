@@ -23,12 +23,13 @@ public class App
 		    	  put("a", "Happy Friday");
 		    	  put("b", "Happy Monday");
 		    	  put("c", "Happy Friday");
+		    	  put("d", "Happy Wednesday");
 		    	}};
 	
 
     public String greeting(String param)
     {
-        logger.info( map.get(param) );
+        logger.debug( map.get(param) );
         return map.get(param);
     }
 }
