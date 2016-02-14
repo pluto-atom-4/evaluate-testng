@@ -1,0 +1,32 @@
+group 'local.example.testng'
+version '1.0-SNAPSHOT'
+
+allprojects {
+    apply plugin: 'java'
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'log4j:log4j:1.2.17'
+    compile 'org.slf4j:slf4j-api:1.7.16'
+    compile 'org.slf4j:slf4j-log4j12:1.7.16'
+
+    testCompile group: 'org.testng', name: 'testng', version: '6.9.10'
+}
+
+test {
+    useTestNG() {
+        // runlist to execute. path is relative to current folder
+        def suiteDir = 'src/test/resources'
+        def suite1 = "${suiteDir}/test-suite-annotation.xml"
+        def suite2 = "${suiteDir}/test-suite-annotation2.xml"
+        println suite1 // check if output matches your expectation
+        suites suite1, suite2
+    }
+}
+
