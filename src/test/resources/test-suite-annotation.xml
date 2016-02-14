@@ -6,6 +6,8 @@
             <class name="local.example.testng.annotation.Sequencing">
                 <methods>
                     <include name="testCase1"/>
+                    <include name="testCase2"/>
+                    <include name="testCase4"/>
                 </methods>
             </class> <!-- local.example.testng.annotation.Sequencing -->
         </classes>

@@ -25,8 +25,8 @@ test {
         def suiteDir = 'src/test/resources'
         def suite1 = "${suiteDir}/test-suite-annotation.xml"
         def suite2 = "${suiteDir}/test-suite-annotation2.xml"
-        println suite1 // check if output matches your expectation
-        suites suite1, suite2
+        println suite1 // check if output matches as expected
+        suites suite2, suite1
     }
 }
 
